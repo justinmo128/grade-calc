@@ -1,1 +1,67 @@
-/* CSS Style Sheet */
+html {
+    background-color: #fffffe;
+}
+
+hr {
+    width: 900px;
+}
+
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+input {
+    margin: 3px 2px;
+    width: 20px;
+}
+
+div {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(41, 41, 50);
+    background-repeat: repeat;
+    color: #ffffff;
+    font-family: "Chrono", sans-serif;
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px 100px;
+    border-radius: 10px;
+}
+
+.grade {
+    border: 3px solid #000000;
+    background-color: rgb(18, 65, 128);
+    padding: 0px 0px;
+}
+
+h1 {
+    font-family: "Titillium Web";
+    font-variant: small-caps;
+    margin: 30px 0;
+}
+
+input {
+    width: 60px;
+    font-size: 18px;
+}
+
+button {
+    background-color: rgb(18, 65, 128);
+    color: white;
+    font-family: 'Baloo 2';
+    padding: 0px 8px;
+    margin: 5px 0px 0px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: rgb(40, 197, 197);
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    padding: 2px;
+}
