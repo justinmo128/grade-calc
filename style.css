@@ -21,7 +21,7 @@ div {
     background-color: rgb(41, 41, 50);
     background-repeat: repeat;
     color: #ffffff;
-    font-family: "Chrono", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 20px auto;
     width: 300px;
     padding: 20px 100px;
@@ -64,4 +64,8 @@ button:hover {
 
 p {
     padding: 2px;
+}
+
+.left {
+    text-align: left;
 }
