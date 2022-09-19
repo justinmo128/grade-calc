@@ -12,6 +12,7 @@ let grade5 = +prompt('What is your Project A grade?');
 let finalGrade = (grade1 + grade2 + grade3 + grade4 + grade5) / 5;
 
 // Output
+// Does not check if grade1 through grade5 is between 0 and 100
 if (finalGrade <= 100 && finalGrade >= 0) {
     alert(`Your final grade will be ${finalGrade}%.`);
 } else {
