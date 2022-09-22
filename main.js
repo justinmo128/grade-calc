@@ -1,5 +1,4 @@
 // Epic Ultimate CS10 Grade Calculator IPO by Justin Mo
-// Using alert and prompt (GUI does not work)
 
 document.getElementById("calcButton").addEventListener("click", calcGrades);
 
