@@ -17,15 +17,19 @@
     <div>
       <h2>Enter Grades</h2>
       <p class="left">
-        Client-Side Scripting 1: <input type="number">%<br>
-        Structured Programming 1: <input type="number">%<br>
-        Structured Programming 2: <input type="number">%<br>
-        Client-Side Scripting 2: <input type="number">%<br>
-        Project A: <input type="number">%<br>
+        Client-Side Scripting 1: <input id="grade1-in" type="number">%<br>
+        Structured Programming 1: <input id="grade2-in" type="number">%<br>
+        Structured Programming 2: <input id="grade3-in" type="number">%<br>
+        Client-Side Scripting 2: <input id="grade4-in" type="number">%<br>
+        Project A: <input id="grade5-in" type="number">%<br>
       </p>
-      <button>Calculate Grades</button>
+      <button id="calcButton">Calculate Grades</button>
     </div>
     <hr />
-    <div class="grade"><h2>Final CS10 Grade: -----%</h2></div>
+    <div class="grade">
+      <p></p>
+      <h2>Final CS10 Grade: <span id="grade-out">__</span>%</h2>
+      <p id="extra-message"></p>
+    </div>
   </body>
 </html>

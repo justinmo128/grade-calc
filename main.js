@@ -1,24 +1,35 @@
 // Epic Ultimate CS10 Grade Calculator IPO by Justin Mo
 // Using alert and prompt (GUI does not work)
 
-// Input
-let grade1 = +prompt('What is your Client-Side Scripting 1 grade?');
-let grade2 = +prompt('What is your Structured Programming 1 grade?');
-let grade3 = +prompt('What is your Structured Programming 2 grade?');
-let grade4 = +prompt('What is your Client-Side Scripting 2 grade?');
-let grade5 = +prompt('What is your Project A grade?');
+document.getElementById("calcButton").addEventListener("click", calcGrades);
 
-// Process
-let finalGrade = (grade1 + grade2 + grade3 + grade4 + grade5) / 5;
+function calcGrades() {
+    // Input
+    let grade1 = +document.getElementById("grade1-in").value;
+    let grade2 = +document.getElementById("grade2-in").value;
+    let grade3 = +document.getElementById("grade3-in").value;
+    let grade4 = +document.getElementById("grade4-in").value;
+    let grade5 = +document.getElementById("grade5-in").value;
 
-// Output
-// Does not check if grade1 through grade5 is between 0 and 100
-if (finalGrade == 0) {
-    alert(`Your final grade will be ${finalGrade}%. (noob)`);
-} else if (finalGrade == 100) {
-    alert(`Your final grade will be ${finalGrade}%. Good job!`);
-} else if (finalGrade < 100 && finalGrade > 0) {
-    alert(`Your final grade will be ${finalGrade}%.`);
-} else {
-    alert('Invalid.')
+    // Process
+    let finalGrade = (grade1 + grade2 + grade3 + grade4 + grade5) / 5;
+
+    // Output
+    // Does not check if grade1 through grade5 is between 0 and 100...
+    // ..because that would be too much typing.
+    if (finalGrade <= 10) {
+        document.getElementById("grade-out").innerHTML = finalGrade
+        document.getElementById("extra-message").innerHTML = "noob"
+    } 
+    else if (finalGrade >= 95) {
+        document.getElementById("grade-out").innerHTML = finalGrade
+        document.getElementById("extra-message").innerHTML = "Good job!"
+    } 
+    else if (finalGrade < 95 && finalGrade > 10) {
+        document.getElementById("grade-out").innerHTML = finalGrade
+    } 
+    else {
+        document.getElementById("grade-out").innerHTML = "Invalid"
+        document.getElementById("extra-message").innerHTML = "Check to make sure you inputted your values correctly."
+    }
 }
